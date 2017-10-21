@@ -12,6 +12,11 @@ nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+footer p {
+    text-align: center;
+    text-decoration: none;
+    color: #999;
+}
 a {
     text-decoration: none;
     color: #999;
@@ -40,4 +45,10 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+
+.home_image img {    
+    height: auto;    
+    border-radius: 10px;
+    max-width: 80%;
 }
