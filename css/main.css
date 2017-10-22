@@ -48,7 +48,17 @@ ul.posts li {
 }
 
 .home_image img {    
-    height: auto;    
-    border-radius: 10px;
+    height: auto;  
+    max-width: 20%;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.about_image img {    
+    height: auto;  
     max-width: 80%;
+    border-radius: 5%;
+    display: block;
+    margin: auto;
 }
