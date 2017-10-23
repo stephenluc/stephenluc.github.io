@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>{{ page.title }}</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-    {% if site.google_analytics and jekyll.environment == 'production' %}
+    <title>{{ page.title }}</title>
+    <!-- link to main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    {% if jekyll.environment == 'production' %}
     {% include analytics.html %}
     {% endif %}
-	</head>
+  </head>
 	<body>
 		<nav>
     		<ul>
