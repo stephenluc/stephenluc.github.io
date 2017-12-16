@@ -9,10 +9,11 @@ http://www.templatemo.com/tm-486-new-event
 :root {
   --blue-color: #21b6ff;
   --slate-gray-color: #182222;
+  --white-color: #ffffff;
 }
 
 body {
-		background: #ffffff;
+		background: var(--white-color);
     font-family: 'Poppins', sans-serif;
     font-style: normal;
 		font-weight: 400;
@@ -73,70 +74,20 @@ a {
   padding-top: 14rem;
   padding-bottom: 14rem;
 }
-
-#detail, #video,
-#speakers, 
-#program,
-#sponsors, 
+ 
 #contact, footer {
     padding-top: 10rem;
     padding-bottom: 10rem;
 }
 
-#detail,
-#speakers, #sponsors,
 footer {
   text-align: center;
 }
 
 #about h3,
-#detail h3, #video h3,
 #resume h3,
-#venue h3,
 #contact h3 {
     padding-bottom: 12px;
-}
-
-#intro .btn,
-#contact .btn {
-    background: transparent;
-    border: 2px solid #ffffff;
-    border-radius: 0px;
-    color: #ffffff;
-    font-weight: 600;
-    letter-spacing: 1px;
-    font-size: 12px;
-    padding: 14px 42px;
-    margin-top: 42px;
-    margin-right: 12px;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-}
-
-#intro .btn-danger,
-#contact .btn-danger {
-    background: #f2545f;
-    border-color: transparent;
-}
-
-#contact .btn {
-  border-radius: 100px;
-}
-
-#intro .btn-danger:hover {
-  background: transparent;
-  border-color: #ffffff;
-  color: #ffffff;
-}
-
-#contact .btn-danger:hover {
-  background: #222;
-}
-
-#intro .btn-default:hover {
-    background: #ffffff;
-    color: #333333;
-    border-color: transparent;
 }
 
 .parallax-section {
@@ -160,7 +111,7 @@ footer {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  background: none repeat scroll 0 0 #ffffff;
+  background: none repeat scroll 0 0 var(--white-color);
 }
 
 .sk-rotating-plane {
@@ -203,7 +154,7 @@ footer {
 }
 
 .custom-navbar .navbar-brand {
-    color: #ffffff;
+    color: var(--white-color);
     font-weight: 600;
     font-size: 3rem;
     line-height: 40px;
@@ -216,7 +167,7 @@ footer {
 }
 
 .custom-navbar .nav li a {
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.6px;
@@ -239,7 +190,7 @@ footer {
 /*
 .custom-navbar .nav li.active > a {
     background-color: transparent;
-    color: #66ccff;
+    color: var(--blue-color);
 }
 */
 
@@ -253,7 +204,7 @@ footer {
 }
 
 .custom-navbar .navbar-toggle .icon-bar {
-    background: #ffffff;
+    background: var(--white-color);
     border-color: transparent;
 }
 
@@ -277,9 +228,11 @@ footer {
 #intro {
     background: url('../assets/images/intro-bg.jpg') 100% 100% repeat-y fixed;
     -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     background-position: center center;
-    color: #ffffff;
+    color: var(--white-color);
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -297,23 +250,14 @@ footer {
   margin: auto;
 }
 
-#intro h3 {
-  letter-spacing: 2px;
-}
-
 #intro .intro-title h1 {
   font-size: 4vmax;
   display:inline;
   margin-left: 1vw;
 }
 
-#static-text{
-  /*-webkit-text-stroke: 1px #d0d0d0;*/
-}
-
 #dynamic-text{
-  color: #ffffff;
-  /*-webkit-text-stroke: 1px #117db2;*/
+  color: var(--white-color);
 }
 
 
@@ -334,12 +278,11 @@ footer {
     Resume section              
 -----------------------------------------*/
 #resume {
-    /*background: url('../assets/images/register-bg.jpg') 50% 0 repeat-y fixed;*/
     background-color: var(--slate-gray-color);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
-    color: #ffffff;
+    color: var(--white-color);
     vertical-align: middle;
 }
 
@@ -351,7 +294,7 @@ footer {
 }
 
 #resume a {
-  background: #ffffff;
+  background: var(--white-color);
   border: none;
   color: var(--blue-color);
   letter-spacing: 2px;
@@ -364,7 +307,7 @@ footer {
 
 #resume a:hover {
   background: var(--blue-color);
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 
@@ -420,7 +363,7 @@ footer {
 
 #contact .social-icon li a:hover {
     background: var(--blue-color);
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 
@@ -436,7 +379,7 @@ footer {
   background-color: #222;
   bottom: 2em;
   right: 2em;
-  color: #ffffff;
+  color: var(--white-color);
   font-size: 32px;
   display: none;
   position: fixed;
@@ -451,7 +394,7 @@ footer {
 
 .go-top:hover {
     background: var(--blue-color);
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 
@@ -468,7 +411,7 @@ footer {
 
   .custom-navbar .nav li a {
     font-size: 11px;
-	line-height: 20px;
+	 line-height: 20px;
   }
 
   #intro { height: 65vh; }
@@ -477,15 +420,10 @@ footer {
     padding-left: 50vh;
   }
 
-
-  #video iframe {
-    margin-top: 42px;
+  .go-top {
+    bottom: 1.5em;
+    right: 1.5em;
   }
-
-  #contact .contact_detail {
-  background: #ffffff;
-  padding: 10rem 3rem 10rem 5rem;
-}
 
 }
 
@@ -496,7 +434,6 @@ footer {
   }
 
   #about img,
-  #detail .col-md-4,
   #resume form {
     padding-top: 32px;
   }
@@ -505,16 +442,9 @@ footer {
     font-size: 13px;
   }
 
-  #program img {
-    padding-bottom: 32px;
-  }
-
-  #sponsors img {
-    padding-top: 22px;
-  }
-
-  #contact .contact_detail {
-    margin-top: 82px;
+  .go-top {
+    bottom: 0.75em;
+    right: 0.75em;
   }
 
 }
@@ -526,17 +456,11 @@ footer {
   }
 
   #intro .container {
-    padding-left: 20vh;
-  }
-
-  #intro .intro-title h1 {
-    /*font-size: 35px;*/
+    padding-left: 22vh;
   }
 
   #resume a {
     font-size: 25px;
   }
 
-
 }
-
