@@ -63,8 +63,8 @@ a {
   margin-bottom: 32px;
 }
 
-#overview,
-#register {
+#about,
+#resume {
   padding-top: 14rem;
   padding-bottom: 14rem;
 }
@@ -84,9 +84,9 @@ footer {
   text-align: center;
 }
 
-#overview h3,
+#about h3,
 #detail h3, #video h3,
-#register h3,
+#resume h3,
 #venue h3,
 #contact h3 {
     padding-bottom: 12px;
@@ -202,10 +202,16 @@ footer {
     font-weight: 600;
     font-size: 3rem;
     line-height: 40px;
+    transition: all 0.4s ease-in-out;
+}
+
+.custom-navbar .navbar-brand:hover{
+    background: transparent;
+    color: #21b6ff;
 }
 
 .custom-navbar .nav li a {
-    color: #ddd;
+    color: #ffffff;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.6px;
@@ -262,19 +268,19 @@ footer {
     Intro section              
 -----------------------------------------*/
 #intro {
-    background: url('../assets/images/body_background.jpg') 100% 100% repeat-y fixed;
+    background: url('../assets/images/intro-bg.jpg') 100% 100% repeat-y fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
     color: #ffffff;
     display: -webkit-box;
     display: -webkit-flex;
-     display: -ms-flexbox;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-     -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     height: 100vh;
 }
 
@@ -288,22 +294,26 @@ footer {
   letter-spacing: 2px;
 }
 
-#changing-text{
-  color: #21b6ff;
-}
-
 #intro .intro-title h1 {
   font-size: 4vw;
   display:inline;
   margin-left: 1vw;
 }
 
+#static-text{
+  /*-webkit-text-stroke: 1px #d0d0d0;*/
+}
+
+#dynamic-text{
+  color: #21b6ff;
+  /*-webkit-text-stroke: 1px #117db2;*/
+}
 
 
 /*---------------------------------------
-   Overview  section              
+   About  section              
 -----------------------------------------*/
-#overview img {
+#about img {
   position: relative;
   padding-bottom: 32px;
 }
@@ -432,42 +442,38 @@ footer {
 
 
 /*---------------------------------------
-    Regsiter section              
+    Resume section              
 -----------------------------------------*/
-#register {
-    background: url('../images/register-bg.jpg') 50% 0 repeat-y fixed;
+#resume {
+    background: url('../assets/images/register-bg.jpg') 50% 0 repeat-y fixed;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
     color: #ffffff;
+    vertical-align: middle;
 }
 
-#register .form-control {
+#resume .resume-btn {
   background: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 0px;
-  color: #ffffff;
   margin-bottom: 16px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 5vw;
 }
 
-#register input {
-  height: 45px;
-}
-
-#register input[type="submit"] {
-  background: #f2545f;
-  border-radius: 100px;
+#resume a {
+  background: #ffffff;
   border: none;
-  color: #ffffff;
+  color: #21b6ff;
   letter-spacing: 2px;
-  height: 50px;
+  height: 45px;
   margin-top: 12px;
   transition: all 0.4s ease-in-out;
 }
 
-#register input[type="submit"]:hover {
-  background: #ffffff;
-  color: #222;
+#resume a:hover {
+  background: #21b6ff;
+  color: #ffffff;
 }
 
 
@@ -535,47 +541,23 @@ footer {
   content: "+";
 }
 
-
-
-/*---------------------------------------
-   Venue section              
------------------------------------------*/
-#venue {
-    background: url('../images/venue-bg.jpg') 50% 0 repeat-y fixed;
-    background-size: cover;
-    background-position: center center;
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-}
-
-#venue p {
-  padding-top: 12px;
-  padding-bottom: 18px;
-}
-
-
-
-/*---------------------------------------
-   Sponsors section              
------------------------------------------*/
-#sponsors img {
-  margin-top: 18px;
-}
-
-
-
 /*---------------------------------------
    Contact section              
 -----------------------------------------*/
 #contact {
-    background: url('../images/contact-bg.jpg') 50% 0 repeat-y fixed;
+    background: url('../assets/images/contact-bg.jpg') 50% 0 repeat-y fixed;
     background-size: cover;
     background-position: center center;
-}
-
-#contact .contact_des {
-  padding-top: 3rem;
-  padding-right: 2rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
 }
 
 #contact .contact_detail {
@@ -613,10 +595,43 @@ footer {
 }
 
 #contact input[type="submit"]:hover {
-  background: #f2545f;
+  background: #21b6ff;
 }
 
+#contact h1 {
+    font-size: 4vw;
+}
 
+/*---------------------------------------
+   Social icon             
+-----------------------------------------*/
+#contact .social-icon {
+    margin: auto;
+    width: 100%;
+}
+
+#contact .social-icon li {
+    display: inline-block;
+    list-style: none;
+}
+
+#contact .social-icon li a {
+    color: #666;
+    border-radius: 20vh;
+    font-size: 5vh;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    width: 10vh;
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#contact .social-icon li a:hover {
+    background: #21b6ff;
+    color: #ffffff;
+}
 
 /*---------------------------------------
    Footer section              
@@ -624,8 +639,6 @@ footer {
 footer {
   background-attachment: fixed;
 }
-
-
 
 /* Back top */
 .go-top {
@@ -645,44 +658,9 @@ footer {
 }
 
 .go-top:hover {
-    background: #f2545f;
+    background: #21b6ff;
     color: #ffffff;
 }
-
-
-/*---------------------------------------
-   Social icon             
------------------------------------------*/
-.social-icon {
-    position: relative;
-    padding: 0;
-    margin: 0;
-}
-
-.social-icon li {
-    display: inline-block;
-    list-style: none;
-}
-
-.social-icon li a {
-    color: #666;
-    border-radius: 100px;
-    font-size: 16px;
-    text-decoration: none;
-    transition: all 0.4s ease-in-out;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.social-icon li a:hover {
-    background: #f2545f;
-    color: #ffffff;
-}
-
-
 
 /*---------------------------------------
    Responsive styles            
