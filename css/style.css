@@ -263,7 +263,6 @@ footer {
 }
 
 
-
 /*---------------------------------------
     Intro section              
 -----------------------------------------*/
@@ -319,128 +318,6 @@ footer {
 }
 
 
-
-/*---------------------------------------
-    Detail section              
------------------------------------------*/
-#detail {
-    background: #222;
-    color: #ffffff;
-}
-
-#detail .fa {
-  color: #f2545f;
-  font-size: 48px;
-}
-
-
-
-/*---------------------------------------
-    Video section              
------------------------------------------*/
-#video iframe {
-  border: none;
-}
-
-
-
-/*---------------------------------------
-   Speakers section              
------------------------------------------*/
-#speakers {
-    background: #f9f9f9;
-}
-
-#speakers h3 {
-    font-size: 18px;
-    margin-bottom: 0px;
-}
-
-#speakers h6 {
-  color: #666;
-  margin-top: 4px;
-}
-
-#speakers img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
-#speakers .col-md-3 {
-    display: block;
-    width: 100%;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    margin-bottom: 22px;
-}
-
-#speakers .speakers-wrapper {
-    background: #ffffff;
-    padding-bottom: 22px;
-}
-
-
-
-/*---------------------------------------
-   Program section              
------------------------------------------*/
-#program h4 {
-    color: #808080;
-    font-size: 12px;
-}
-
-#program h3 {
-  margin-top: 16px;
-}
-
-#program .program-divider {
-    border: 1px solid #f9f9f9;
-    margin-top: 32px;
-    margin-bottom: 42px;
-}
-
-#program span {
-    padding-right: 12px;
-}
-
-#program img {
-  border-radius: 50%;
-}
-
-.nav-tabs {
-  margin-bottom: 20px;
-}
-.nav-tabs > li {
-  float: left;
-  margin-bottom: -1px;
-}
-.nav-tabs > li > a {
-  color: #000000;
-  font-weight: 600;
-  margin-right: 2px;
-  line-height: 1.42857143;
-  border: none;
-  border-radius: 0px;
-}
-.nav-tabs > li > a:hover {
-  background-color: transparent;
-}
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
-  color: #f2545f;
-  cursor: default;
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-bottom-color: #999;
-}
-.tab-content {
-  padding-top: 20px;
-}
-
-
-
 /*---------------------------------------
     Resume section              
 -----------------------------------------*/
@@ -477,70 +354,6 @@ footer {
 }
 
 
-
-/*---------------------------------------
-   Faq section              
------------------------------------------*/
-#faq {
-  background: #f9f9f9;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-
-#faq .panel-group {
-  margin-top: 32px;
-}
-
-#faq .panel-group .panel {
-  margin-bottom: 8px;
-}
-
-#faq .panel-default {
-  border: none;
-}
-
-#faq .panel-default>.panel-heading {
-  background: #f0f0f0;
-  color: #505050;
-}
-
-#faq .panel-heading {
-  border: none;
-  padding-top: 8px;
-  padding-bottom: 6px;
-}
-
-#faq .panel-default>.panel-heading+.panel-collapse>.panel-body {
-  border-top: none;
-  padding-top: 22px;
-  padding-left: 32px;
-  padding-bottom: 22px;
-}
-
-#faq .panel-heading .panel-title a[data-toggle="collapse"] {
-  font-size: 18px;
-  font-weight: 500;
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 10px 15px;
-}
-
-#faq .panel-heading .panel-title a[data-toggle="collapse"]::after {
-  content: "-";
-  display: block;
-  position: absolute;
-  line-height: 1;
-  right: 1em;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#faq .panel-heading .panel-title a[data-toggle="collapse"].collapsed::after {
-  content: "+";
-}
-
 /*---------------------------------------
    Contact section              
 -----------------------------------------*/
@@ -560,53 +373,18 @@ footer {
     vertical-align: middle;
 }
 
-#contact .contact_detail {
-  background: #ffffff;
-  padding: 5rem 5rem 12rem 5rem;
-}
-
-#contact .form-control {
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid #f0f0f0;
-  border-radius: 0px;
-  box-shadow: none;
-  margin-bottom: 16px;
-  transition: all 0.4s ease-in-out;
-}
-
-#contact .form-control:focus {
-  border-bottom-color: #999;
-}
-
-#contact input {
-  height: 45px;
-}
-
-#contact input[type="submit"] {
-  background: #222;
-  border-radius: 100px;
-  border: none;
-  color: #ffffff;
-  letter-spacing: 2px;
-  height: 50px;
-  margin-top: 12px;
-  transition: all 0.4s ease-in-out;
-}
-
-#contact input[type="submit"]:hover {
-  background: #21b6ff;
-}
-
-#contact h1 {
+#contact .contact-title {
+    text-align: center;
     font-size: 4vw;
+
 }
+
 
 /*---------------------------------------
    Social icon             
 -----------------------------------------*/
 #contact .social-icon {
-    margin: auto;
+    padding-right: 40px;
     width: 100%;
 }
 
@@ -624,14 +402,13 @@ footer {
     width: 10vh;
     height: 10vh;
     line-height: 10vh;
-    text-align: center;
-    vertical-align: middle;
 }
 
 #contact .social-icon li a:hover {
     background: #21b6ff;
     color: #ffffff;
 }
+
 
 /*---------------------------------------
    Footer section              
@@ -661,6 +438,7 @@ footer {
     background: #21b6ff;
     color: #ffffff;
 }
+
 
 /*---------------------------------------
    Responsive styles            
@@ -697,9 +475,9 @@ footer {
     line-height: 20px;
   }
 
-  #overview img,
+  #about img,
   #detail .col-md-4,
-  #register form {
+  #resume form {
     padding-top: 32px;
   }
 
