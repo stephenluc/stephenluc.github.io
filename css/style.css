@@ -1,10 +1,15 @@
 /*
 
-New Event
+Stephen Luc Personal Website CSS
 
 http://www.templatemo.com/tm-486-new-event
 
 */
+
+:root {
+  --blue-color: #21b6ff;
+  --slate-gray-color: #182222;
+}
 
 body {
 		background: #ffffff;
@@ -207,7 +212,7 @@ footer {
 
 .custom-navbar .navbar-brand:hover{
     background: transparent;
-    color: #21b6ff;
+    color: var(--blue-color);
 }
 
 .custom-navbar .nav li a {
@@ -222,7 +227,7 @@ footer {
 
 .custom-navbar .nav li a:hover {
     background: transparent;
-    color: #66ccff;
+    color: var(--blue-color);
 }
 
 .custom-navbar .navbar-nav > li > a:hover,
@@ -287,7 +292,7 @@ footer {
 }
 
 #intro .container {
-  padding-left: 40%;
+  padding-left: 70vh;
   width: 100%;
   margin: auto;
 }
@@ -297,7 +302,7 @@ footer {
 }
 
 #intro .intro-title h1 {
-  font-size: 4vw;
+  font-size: 4vmax;
   display:inline;
   margin-left: 1vw;
 }
@@ -320,12 +325,17 @@ footer {
   padding-bottom: 32px;
 }
 
+#about a.outside-link {
+  color: var(--blue-color);
+}
+
 
 /*---------------------------------------
     Resume section              
 -----------------------------------------*/
 #resume {
-    background: url('../assets/images/register-bg.jpg') 50% 0 repeat-y fixed;
+    /*background: url('../assets/images/register-bg.jpg') 50% 0 repeat-y fixed;*/
+    background-color: var(--slate-gray-color);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -343,7 +353,7 @@ footer {
 #resume a {
   background: #ffffff;
   border: none;
-  color: #21b6ff;
+  color: var(--blue-color);
   letter-spacing: 2px;
   min-height: 50px;
   height: 5vw;
@@ -353,7 +363,7 @@ footer {
 }
 
 #resume a:hover {
-  background: #21b6ff;
+  background: var(--blue-color);
   color: #ffffff;
 }
 
@@ -409,7 +419,7 @@ footer {
 }
 
 #contact .social-icon li a:hover {
-    background: #21b6ff;
+    background: var(--blue-color);
     color: #ffffff;
 }
 
@@ -440,7 +450,7 @@ footer {
 }
 
 .go-top:hover {
-    background: #21b6ff;
+    background: var(--blue-color);
     color: #ffffff;
 }
 
@@ -462,6 +472,11 @@ footer {
   }
 
   #intro { height: 65vh; }
+
+  #intro .container {
+    padding-left: 50vh;
+  }
+
 
   #video iframe {
     margin-top: 42px;
@@ -510,9 +525,18 @@ footer {
     height: 100vh;
   }
 
+  #intro .container {
+    padding-left: 20vh;
+  }
+
+  #intro .intro-title h1 {
+    /*font-size: 35px;*/
+  }
+
   #resume a {
-  font-size: 25px;
-}
+    font-size: 25px;
+  }
+
 
 }
 
