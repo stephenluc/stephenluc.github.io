@@ -304,7 +304,7 @@ footer {
 }
 
 #dynamic-text{
-  color: #21b6ff;
+  color: #ffffff;
   /*-webkit-text-stroke: 1px #117db2;*/
 }
 
@@ -335,7 +335,6 @@ footer {
   margin-bottom: 16px;
   text-align: center;
   vertical-align: middle;
-  font-size: 5vw;
 }
 
 #resume a {
@@ -343,9 +342,11 @@ footer {
   border: none;
   color: #21b6ff;
   letter-spacing: 2px;
-  height: 45px;
+  min-height: 50px;
+  height: 5vw;
   margin-top: 12px;
   transition: all 0.4s ease-in-out;
+  font-size: 3vw;
 }
 
 #resume a:hover {
@@ -504,6 +505,10 @@ footer {
   #intro {
     height: 100vh;
   }
+
+  #resume a {
+  font-size: 25px;
+}
 
 }
 
