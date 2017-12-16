@@ -230,10 +230,13 @@ footer {
   background-color: transparent;
 }
 
+/* TODO: Fix active section highlight */
+/*
 .custom-navbar .nav li.active > a {
     background-color: transparent;
     color: #66ccff;
 }
+*/
 
 .custom-navbar .navbar-toggle {
     border: none;
