@@ -226,12 +226,13 @@ footer {
     Intro section              
 -----------------------------------------*/
 #intro {
-    background: url('../assets/images/intro-bg.jpg') 100% 100% repeat-y fixed;
+    background: url('../assets/images/intro-bg-full.jpg') 100% 100% fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
     color: var(--white-color);
     display: -webkit-box;
     display: -webkit-flex;
@@ -245,7 +246,7 @@ footer {
 }
 
 #intro .container {
-  padding-left: 70vh;
+  padding-left: 45%;
   width: 100%;
   margin: auto;
 }
@@ -315,7 +316,7 @@ footer {
    Contact section              
 -----------------------------------------*/
 #contact {
-    background: url('../assets/images/contact-bg.jpg') 50% 0 repeat-y fixed;
+    background: url('../assets/images/contact-bg.jpg') 50% 0 fixed;
     background-size: cover;
     background-position: center center;
     display: -webkit-box;
@@ -333,13 +334,8 @@ footer {
 #contact .contact-title {
     text-align: center;
     font-size: 4vw;
-
 }
 
-
-/*---------------------------------------
-   Social icon             
------------------------------------------*/
 #contact .social-icon {
     padding-right: 40px;
     width: 100%;
@@ -352,13 +348,13 @@ footer {
 
 #contact .social-icon li a {
     color: #666;
-    border-radius: 20vh;
-    font-size: 5vh;
+    border-radius: 16vmax;
+    font-size: 4vmax;
     text-decoration: none;
     transition: all 0.4s ease-in-out;
-    width: 10vh;
-    height: 10vh;
-    line-height: 10vh;
+    width: 8vmax;
+    height: 8vmax;
+    line-height: 8vmax;
 }
 
 #contact .social-icon li a:hover {
@@ -414,12 +410,6 @@ footer {
 	 line-height: 20px;
   }
 
-  #intro { height: 65vh; }
-
-  #intro .container {
-    padding-left: 50vh;
-  }
-
   .go-top {
     bottom: 1.5em;
     right: 1.5em;
@@ -452,15 +442,60 @@ footer {
 @media (max-width: 760px) {
 
   #intro {
-    height: 100vh;
+    background: url('../assets/images/intro-bg-760.jpg') 100% 100% fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: var(--white-color);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  #intro .intro-title h1 {
+    font-size: 3vmax;
+    display:inline;
   }
 
   #intro .container {
-    padding-left: 22vh;
+    padding-left: 40%
   }
 
   #resume a {
     font-size: 25px;
   }
 
+  #resume h2 {
+    font-size: 28px;
+  }
+
+  #resume h3 {
+    font-size: 23px;
+  }
+
+  #contact .contact-title {
+    text-align: center;
+    font-size: 6vw;
+  }
+
+  #contact .social-icon li a {
+    color: #666;
+    border-radius: 20vmax;
+    font-size: 5vmax;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    width: 10vmax;
+    height: 10vmax;
+    line-height: 10vmax;
+  }
+
 }
+
