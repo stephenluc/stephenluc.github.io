@@ -257,7 +257,7 @@ footer {
   margin-left: 1vw;
 }
 
-#dynamic-text{
+#intro .dynamic-text{
   color: var(--white-color);
 }
 
@@ -397,6 +397,8 @@ footer {
 /*---------------------------------------
    Responsive styles            
 -----------------------------------------*/
+
+/* Tablet sizes */
 @media (max-width: 980px) {
 
   p {font-size: 13px;}
@@ -409,37 +411,6 @@ footer {
     font-size: 11px;
 	 line-height: 20px;
   }
-
-  .go-top {
-    bottom: 1.5em;
-    right: 1.5em;
-  }
-
-}
-
-@media (max-width: 768px) {
-
-  .custom-navbar .navbar-brand {
-    line-height: 20px;
-  }
-
-  #about img,
-  #resume form {
-    padding-top: 32px;
-  }
-
-  .nav-tabs > li > a {
-    font-size: 13px;
-  }
-
-  .go-top {
-    bottom: 0.75em;
-    right: 0.75em;
-  }
-
-}
-
-@media (max-width: 760px) {
 
   #intro {
     background: url('../assets/images/intro-bg-760.jpg') 100% 100% fixed;
@@ -458,15 +429,54 @@ footer {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-  }
-
-  #intro .intro-title h1 {
-    font-size: 3vmax;
-    display:inline;
+    height: 100vh;
   }
 
   #intro .container {
     padding-left: 40%
+  }
+
+  #about img {
+    padding-top: 32px;
+  }
+
+  .go-top {
+    bottom: 1.5em;
+    right: 1.5em;
+  }
+
+}
+
+/* Smartphone sizes */
+@media (max-width: 768px) {
+
+  .custom-navbar .navbar-brand {
+    line-height: 20px;
+  }
+
+  #about img {
+    padding-top: 32px;
+  }
+
+  .nav-tabs > li > a {
+    font-size: 13px;
+  }
+
+  .go-top {
+    bottom: 0.75em;
+    right: 0.75em;
+  }
+
+}
+
+@media (max-width: 760px) {
+
+  #intro .intro-title h1 {
+    font-size: 3vmax;
+  }
+
+  #about h3 {
+    font-size: 22px;
   }
 
   #resume a {
