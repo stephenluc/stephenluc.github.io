@@ -2,510 +2,146 @@
 
 Stephen Luc Personal Website CSS
 
-http://www.templatemo.com/tm-486-new-event
-
 */
 
 :root {
-  --blue-color: #21b6ff;
-  --slate-gray-color: #182222;
-  --white-color: #ffffff;
+  --main-color: #21b6ff;
+  --secondary-color: #99FEA3;
+  --tertiary-color: #4DCA59;
+  --quaternary-color: #8EC2FE;
+  --background-color: #2A2A2F;
+  --defaut-text-color: #ffffff;
+  --grey-text-color: #DCDCDC;
 }
 
 body {
-		background: var(--white-color);
+    background: var(--background-color);
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-		font-weight: 400;
+    padding: 2em;
 }
 
 
 /*---------------------------------------
     Typorgraphy              
 -----------------------------------------*/
-h1,h2,h3,h4,h5,h6 {
-  font-weight: 600;
-}
-
-h3,h5 {
-  font-weight: 500;
-}
-
 h1 {
-    font-size: 40px;
-    letter-spacing: 2px;
-}
-
-h2 {
-  font-size: 30px;
-  text-transform: uppercase;
-}
-
-h3 {
-  line-height: 36px;
-}
-
-h5 {
-    letter-spacing: 1px;
-    padding-top: 10px;
+  color: var(--secondary-color);
+  font-size: 1.5em;
+  font-weight: normal;
+  margin: 0px;
 }
 
 p {
-    color: #707070;
-    font-size: 14px;
-    line-height: 24px;
-}
-
-a {
-  text-decoration: none !important;
-  outline: none;
+  margin-top: 0px;
 }
 
 
 /*---------------------------------------
     General               
 -----------------------------------------*/
-.section-title {
-  margin-bottom: 32px;
-}
-
-#about,
-#resume {
-  padding-top: 14rem;
-  padding-bottom: 14rem;
-}
- 
-#contact, footer {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-}
-
-footer {
-  text-align: center;
-}
-
-#about h3,
-#resume h3,
-#contact h3 {
-    padding-bottom: 12px;
-}
-
-.parallax-section {
-  background-attachment: fixed !important;
-  background-size: cover !important;
-}
-
-
-
-/*---------------------------------------
-    Preloader section              
------------------------------------------*/
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 99999;
+.header {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  background: none repeat scroll 0 0 var(--white-color);
+  flex-direction: row;
+  color: var(--defaut-text-color);
+  font-size: 2em;
+  border-bottom-width: 1px;
+  border-bottom-color: var(--grey-text-color);
+  text-decoration: none !important;
 }
 
-.sk-rotating-plane {
-  width: 50px;
-  height: 50px;
-  background-color: #222;
-  -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
-          animation: sk-rotatePlane 1.2s infinite ease-in-out; }
-
-@-webkit-keyframes sk-rotatePlane {
-  0% {
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
-  50% {
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
-  100% {
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
-
-@keyframes sk-rotatePlane {
-  0% {
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
-  50% {
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
-  100% {
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
-
-
-
-/*---------------------------------------
-    Navigation Links section              
------------------------------------------*/
-.custom-navbar {
-    margin-bottom: 0;
-    background-color: #101010;
+.nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.custom-navbar .navbar-brand {
-    color: var(--white-color);
-    font-weight: 600;
-    font-size: 3rem;
-    line-height: 40px;
-    transition: all 0.4s ease-in-out;
+.nav-item {
+  color: var(--defaut-text-color);
+  font-size: 1.5em;
 }
 
-.custom-navbar .navbar-brand:hover{
-    background: transparent;
-    color: var(--blue-color);
+.nav-margin {
+  margin-bottom: 25px;
 }
 
-.custom-navbar .nav li a {
-    color: var(--white-color);
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.6px;
-    text-transform: uppercase;
-    line-height: 40px;
-    transition: all 0.4s ease-in-out;
+.unselected {
+  text-decoration: none !important;;
 }
 
-.custom-navbar .nav li a:hover {
-    background: transparent;
-    color: var(--blue-color);
+.main-text {
+  color: var(--main-color);
 }
 
-.custom-navbar .navbar-nav > li > a:hover,
-.custom-navbar .navbar-nav > li > a:focus {
-  background-color: transparent;
+.secondary-text {
+  color: var(--secondary-color);
 }
 
-/* TODO: Fix active section highlight */
-/*
-.custom-navbar .nav li.active > a {
-    background-color: transparent;
-    color: var(--blue-color);
-}
-*/
-
-.custom-navbar .navbar-toggle {
-    border: none;
-    padding-top: 10px;
+.tertiary-text {
+  color: var(--tertiary-color);
 }
 
-.custom-navbar .navbar-toggle {
-    background-color: transparent;
+.quaternary-text {
+  color: var(--quaternary-color);
 }
 
-.custom-navbar .navbar-toggle .icon-bar {
-    background: var(--white-color);
-    border-color: transparent;
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
 }
 
-@media(min-width:768px) {
-    .custom-navbar {
-        padding: 20px 0;
-        border-bottom: 0;
-        background: 0 0; 
-    }
-    .custom-navbar.top-nav-collapse {
-        background: #101010;
-        padding: 0;
-    }
-
+.content {
+  color: var(--grey-text-color);
+  font-size: 1em;
+  padding-left: 25px;
 }
 
-
-/*---------------------------------------
-    Intro section              
------------------------------------------*/
-#intro {
-    background: url('../assets/images/intro-bg-full.jpg') 100% 100% fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    color: var(--white-color);
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 100vh;
+.subtext {
+  font-size: 1.25em;
 }
 
-#intro .container {
-  padding-left: 45%;
-  width: 100%;
-  margin: auto;
+.row {
+  display: flex;
+  flex-direction: row;
 }
 
-#intro .intro-title h1 {
-  font-size: 4vmax;
-  display:inline;
-  margin-left: 1vw;
+.margin-bottom {
+  margin-bottom: 15px;
 }
 
-#intro .dynamic-text{
-  color: var(--white-color);
-}
-
-
-/*---------------------------------------
-   About  section              
------------------------------------------*/
-#about img {
-  position: relative;
-  padding-bottom: 32px;
-}
-
-#about a.outside-link {
-  color: var(--blue-color);
-}
-
-
-/*---------------------------------------
-    Resume section              
------------------------------------------*/
-#resume {
-    background-color: var(--slate-gray-color);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    color: var(--white-color);
-    vertical-align: middle;
-}
-
-#resume .resume-btn {
-  background: transparent;
-  margin-bottom: 16px;
-  text-align: center;
-  vertical-align: middle;
-}
-
-#resume a {
-  background: var(--white-color);
-  border: none;
-  color: var(--blue-color);
-  letter-spacing: 2px;
-  min-height: 50px;
-  height: 5vw;
-  margin-top: 12px;
-  transition: all 0.4s ease-in-out;
-  font-size: 3vw;
-}
-
-#resume a:hover {
-  background: var(--blue-color);
-  color: var(--white-color);
-}
-
-
-/*---------------------------------------
-   Contact section              
------------------------------------------*/
-#contact {
-    background: url('../assets/images/contact-bg.jpg') 50% 0 fixed;
-    background-size: cover;
-    background-position: center center;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    text-align: center;
-    vertical-align: middle;
-}
-
-#contact .contact-title {
-    text-align: center;
-    font-size: 4vw;
-}
-
-#contact .social-icon {
-    padding-right: 40px;
-    width: 100%;
-}
-
-#contact .social-icon li {
-    display: inline-block;
-    list-style: none;
-}
-
-#contact .social-icon li a {
-    color: #666;
-    border-radius: 16vmax;
-    font-size: 4vmax;
-    text-decoration: none;
-    transition: all 0.4s ease-in-out;
-    width: 8vmax;
-    height: 8vmax;
-    line-height: 8vmax;
-}
-
-#contact .social-icon li a:hover {
-    background: var(--blue-color);
-    color: var(--white-color);
-}
-
-
-/*---------------------------------------
-   Footer section              
------------------------------------------*/
-footer {
-  background-attachment: fixed;
-}
-
-/* Back top */
-.go-top {
-  background-color: #222;
-  bottom: 2em;
-  right: 2em;
-  color: var(--white-color);
-  font-size: 32px;
-  display: none;
-  position: fixed;
-  text-decoration: none;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  transition: all 0.4s ease-in-out;
-  padding-top: 12px;
-}
-
-.go-top:hover {
-    background: var(--blue-color);
-    color: var(--white-color);
-}
-
-
-/*---------------------------------------
-   Responsive styles            
------------------------------------------*/
-
-/* Tablet sizes */
-@media (max-width: 980px) {
-
-  p {font-size: 13px;}
-
-  .custom-navbar .navbar-brand {
-    font-size: 2rem;
-  }
-
-  .custom-navbar .nav li a {
-    font-size: 11px;
-	 line-height: 20px;
-  }
-
-  #intro {
-    background: url('../assets/images/intro-bg-760.jpg') 100% 100% fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    color: var(--white-color);
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 100vh;
-  }
-
-  #intro .container {
-    padding-left: 40%;
-  }
-
-  #about img {
-    padding-top: 32px;
-  }
-
-  .go-top {
-    bottom: 1.5em;
-    right: 1.5em;
-  }
-
+.margin-left {
+  margin-left: 15px;
 }
 
 /* Smartphone sizes */
-@media (max-width: 768px) {
-
-  .custom-navbar .navbar-brand {
-    line-height: 20px;
+@media (max-width: 650px) {
+  body {
+    padding: 1em;
   }
 
-  #about img {
-    padding-top: 32px;
+  .nav {
+    display: flex;
+    flex-direction: row;
   }
 
-  .nav-tabs > li > a {
-    font-size: 13px;
+  .nav-item {
+    font-size: 1.25em;
   }
 
-  .go-top {
-    bottom: 0.75em;
-    right: 0.75em;
+  .nav-margin {
+    margin-right: 25px;
   }
 
-}
-
-@media (max-width: 760px) {
-
-  #intro .intro-title h1 {
-    font-size: 3vmax;
+  .container {
+    display: flex;
+    flex-direction: column;
   }
 
-  #about h3 {
-    font-size: 22px;
+  .content {
+    color: var(--grey-text-color);
+    font-size: 1em;
+    padding-left: 0px;
   }
-
-  #resume a {
-    font-size: 25px;
-  }
-
-  #resume h2 {
-    font-size: 28px;
-  }
-
-  #resume h3 {
-    font-size: 23px;
-  }
-
-  #contact .contact-title {
-    text-align: center;
-    font-size: 6vw;
-  }
-
-  #contact .social-icon li a {
-    color: #666;
-    border-radius: 20vmax;
-    font-size: 5vmax;
-    text-decoration: none;
-    transition: all 0.4s ease-in-out;
-    width: 10vmax;
-    height: 10vmax;
-    line-height: 10vmax;
-  }
-
 }
 
