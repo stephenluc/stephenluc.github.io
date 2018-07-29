@@ -38,7 +38,7 @@ p {
     General               
 -----------------------------------------*/
 .header {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .header a {
@@ -57,10 +57,12 @@ p {
 .nav-item {
   color: var(--white-color);
   font-size: 1.5em;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .nav-margin {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .unselected {
@@ -94,6 +96,7 @@ p {
   flex-direction: column;
   color: var(--content-color);
   font-size: 1em;
+  padding-top: 5px;
   padding-left: 25px;
 }
 
