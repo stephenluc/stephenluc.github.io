@@ -16,10 +16,12 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600' rel='stylesheet' type='text/css'> {% if jekyll.environment == 'production' %} {% include analytics.html %} {% endif %}
   </head>
   <body>
-    <a class="header" href="/about">
-        <p class="main-text">Stephen&nbsp;</p>
-        <p>Luc</p>
-    </a>
+    <div class="header">
+      <a href="/about">
+          <span class="main-text">Stephen&nbsp;</span>
+          <span>Luc</span>
+      </a>
+    </div>
     <div class="container">
       <div class="nav">
           <a 
@@ -54,9 +56,9 @@
           </a>
           <a 
             {% if page.title == "Contact" %} 
-              class="nav-item main-text"
+              class="nav-item nav-margin main-text"
             {% else %}
-              class="nav-item unselected"
+              class="nav-item nav-margin unselected"
             {% endif %}
             href="/contact"
           >

@@ -8,8 +8,9 @@ Stephen Luc Personal Website CSS
   --tertiary-color: #4DCA59;
   --quaternary-color: #8EC2FE;
   --background-color: #2A2A2F;
-  --defaut-text-color: #ffffff;
-  --grey-text-color: #DCDCDC;
+  --white-color: #ffffff;
+  --content-color: #DCDCDC;
+  --subtext-color: #B4B4B5;
 }
 
 body {
@@ -37,12 +38,13 @@ p {
     General               
 -----------------------------------------*/
 .header {
-  display: flex;
+  margin-bottom: 35px;
+}
+
+.header a {
   flex-direction: row;
-  color: var(--defaut-text-color);
+  color: var(--white-color);
   font-size: 2em;
-  border-bottom-width: 1px;
-  border-bottom-color: var(--grey-text-color);
   text-decoration: none !important;
 }
 
@@ -53,7 +55,7 @@ p {
 }
 
 .nav-item {
-  color: var(--defaut-text-color);
+  color: var(--white-color);
   font-size: 1.5em;
 }
 
@@ -90,14 +92,14 @@ p {
 .content {
   display: flex;
   flex-direction: column;
-  color: var(--grey-text-color);
+  color: var(--content-color);
   font-size: 1em;
   padding-left: 25px;
 }
 
 .subtext {
   font-size: .8em;
-  color: #B4B4B5;
+  color: var(--subtext-color);
 }
 
 .secondary-header {
@@ -117,6 +119,10 @@ p {
 
 .margin-left {
   margin-left: 15px;
+}
+
+.margin-right {
+  margin-right: 15px;
 }
 
 /* Smartphone sizes */
@@ -144,8 +150,16 @@ p {
   }
 
   .content {
-    color: var(--grey-text-color);
-    font-size: 1em;
     padding-left: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav-item {
+    font-size: 1.1em;
+  }
+
+  .nav-margin {
+    margin-right: 10px;
   }
 }
