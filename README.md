@@ -1,4 +1,4 @@
 ## Welcome to my personal portfolio
 
-[stephennluc.com](http://stephennluc.com/) 
+[https://stephenluc.github.io/](https://stephenluc.github.io/) 
 
